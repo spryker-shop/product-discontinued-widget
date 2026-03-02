@@ -12,9 +12,6 @@ use SprykerShop\Yves\ProductDiscontinuedWidget\Dependency\Client\ProductDisconti
 
 class ProductDiscontinuedWidgetFactory extends AbstractFactory
 {
-    /**
-     * @return \SprykerShop\Yves\ProductDiscontinuedWidget\Dependency\Client\ProductDiscontinuedWidgetToProductDiscontinuedStorageClientInterface
-     */
     public function getProductDiscontinuedStorageClient(): ProductDiscontinuedWidgetToProductDiscontinuedStorageClientInterface
     {
         return $this->getProvidedDependency(ProductDiscontinuedWidgetDependencyProvider::CLIENT_PRODUCT_DISCONTINUED_STORAGE);

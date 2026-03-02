@@ -18,11 +18,6 @@ use SprykerShop\Yves\ShoppingListPage\Dependency\Plugin\ProductDiscontinuedWidge
  */
 class ProductDiscontinuedWidgetPlugin extends AbstractWidgetPlugin implements ProductDiscontinuedWidgetPluginInterface
 {
-    /**
-     * @param string $sku
-     *
-     * @return void
-     */
     public function initialize(string $sku): void
     {
         $widget = new ProductDiscontinuedWidget($sku);

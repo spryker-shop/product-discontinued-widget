@@ -24,12 +24,6 @@ class ProductDiscontinuedWidgetToProductDiscontinuedStorageClientBridge implemen
         $this->productDiscontinuedStorageClient = $productDiscontinuedStorageClient;
     }
 
-    /**
-     * @param string $concreteSku
-     * @param string $locale
-     *
-     * @return \Generated\Shared\Transfer\ProductDiscontinuedStorageTransfer|null
-     */
     public function findProductDiscontinuedStorage(string $concreteSku, string $locale): ?ProductDiscontinuedStorageTransfer
     {
         return $this->productDiscontinuedStorageClient->findProductDiscontinuedStorage($concreteSku, $locale);

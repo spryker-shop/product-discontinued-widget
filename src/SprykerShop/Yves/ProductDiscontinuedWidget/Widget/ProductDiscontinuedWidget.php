@@ -14,9 +14,6 @@ use Spryker\Yves\Kernel\Widget\AbstractWidget;
  */
 class ProductDiscontinuedWidget extends AbstractWidget
 {
-    /**
-     * @param string $sku
-     */
     public function __construct(string $sku)
     {
         $discontinuedProduct = $this->getFactory()
@@ -27,17 +24,11 @@ class ProductDiscontinuedWidget extends AbstractWidget
         $this->addParameter('isDiscontinued', (bool)$discontinuedProduct);
     }
 
-    /**
-     * @return string
-     */
     public static function getName(): string
     {
         return 'ProductDiscontinuedWidget';
     }
 
-    /**
-     * @return string
-     */
     public static function getTemplate(): string
     {
         return '@ProductDiscontinuedWidget/views/shopping-list-product-discontinued/shopping-list-product-discontinued.twig';

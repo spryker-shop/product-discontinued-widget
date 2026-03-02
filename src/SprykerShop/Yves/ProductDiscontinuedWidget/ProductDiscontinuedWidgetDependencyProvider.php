@@ -18,11 +18,6 @@ class ProductDiscontinuedWidgetDependencyProvider extends AbstractBundleDependen
      */
     public const CLIENT_PRODUCT_DISCONTINUED_STORAGE = 'CLIENT_PRODUCT_DISCONTINUED_STORAGE';
 
-    /**
-     * @param \Spryker\Yves\Kernel\Container $container
-     *
-     * @return \Spryker\Yves\Kernel\Container
-     */
     public function provideDependencies(Container $container): Container
     {
         $container = parent::provideDependencies($container);

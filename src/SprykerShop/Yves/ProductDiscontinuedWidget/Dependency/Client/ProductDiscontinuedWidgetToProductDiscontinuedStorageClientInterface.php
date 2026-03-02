@@ -11,11 +11,5 @@ use Generated\Shared\Transfer\ProductDiscontinuedStorageTransfer;
 
 interface ProductDiscontinuedWidgetToProductDiscontinuedStorageClientInterface
 {
-    /**
-     * @param string $concreteSku
-     * @param string $locale
-     *
-     * @return \Generated\Shared\Transfer\ProductDiscontinuedStorageTransfer|null
-     */
     public function findProductDiscontinuedStorage(string $concreteSku, string $locale): ?ProductDiscontinuedStorageTransfer;
 }
